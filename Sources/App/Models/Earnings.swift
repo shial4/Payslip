@@ -45,6 +45,7 @@ final class Earnings: Content {
         case workOvertimeMinutes
         case workOvertimeRate
         case total
+        case startTime
     }
     
     init(from decoder: Decoder) throws {
@@ -55,6 +56,7 @@ final class Earnings: Content {
         workAtEveningRate = try container.decode(Double.self, forKey: .workAtEveningRate)
         workOvertimeMinutes = try container.decode(Int.self, forKey: .workOvertimeMinutes)
         workOvertimeRate = try container.decode(Double.self, forKey: .workOvertimeRate)
+        startTime = try container.decode(String.self, forKey: .startTime)
     }
     
     func encode(to encoder: Encoder) throws {
@@ -66,6 +68,7 @@ final class Earnings: Content {
         try container.encode(workOvertimeMinutes, forKey: .workOvertimeMinutes)
         try container.encode(workOvertimeRate, forKey: .workOvertimeRate)
         try container.encode(total, forKey: .total)
+        try container.encode(startTime, forKey: .startTime)
     }
     
     var normalWorkMinutes: Int {
@@ -133,6 +136,7 @@ final class Earnings: Content {
             }
         }
     }
+    var startTime: String
     var weekday: WeekDay?
     var isCasual: Bool = false
     var isHoliday: Bool = false
@@ -159,6 +163,7 @@ final class Earnings: Content {
         if let _ = shift.breakDurationMinutes, shift.breakStart == nil {
             throw EarningsError.missingBreakStartTime
         }
+        self.startTime = start.toString()
         //If the employee is casual they earn an additional loading of 25% for every hour worked.
         self.rate = (wage.levels[shift.wageLevel] ?? 0)
         self.isCasual = emplyee.casual
