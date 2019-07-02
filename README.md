@@ -1,4 +1,7 @@
 <p align="center">
+    <a href="https://travis-ci.com/shial4/Payslip">
+        <img src="https://travis-ci.com/shial4/Payslip.svg?branch=master" alt="TravisCI" />
+    </a>
     <a href="LICENSE">
         <img src="http://img.shields.io/badge/license-MIT-brightgreen.svg" alt="MIT License">
     </a>
