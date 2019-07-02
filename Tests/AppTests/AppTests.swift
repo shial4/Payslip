@@ -68,7 +68,7 @@ final class AppTests: XCTestCase {
             XCTAssert(payslip.totalWorkHours == 25.75)
             XCTAssert(payslip.eveningWorkHours == 5.25)
             XCTAssert(payslip.overtimeWorkHours == 0)
-            XCTAssert(payslip.totalEarnings == 22952.4)
+            XCTAssertEqual(payslip.totalEarnings, 382.5, accuracy: 0.5)
         } catch let thrownError {
             XCTFail(thrownError.localizedDescription)
         }
