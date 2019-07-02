@@ -27,7 +27,7 @@ public struct WageLevels: Decodable {
         let container = try decoder.container(keyedBy: WageKey.self)
         var levels = [String: Double]()
         for key in container.allKeys {
-            if let any = try container.decodeUnstable(Double.self, forKey: key) {
+            if let any = try container.decodeUnstableOptional(Double.self, forKey: key) {
                 levels[key.stringValue] = any
             }
         }

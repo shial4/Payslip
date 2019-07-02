@@ -12,7 +12,7 @@ public protocol StringInitializable {
 }
 
 extension KeyedDecodingContainerProtocol {
-    public func decodeUnstable<T: Decodable & StringInitializable>(_ type: T.Type = T.self, forKey key: Key) throws -> T? {
+    public func decodeUnstableOptional<T: Decodable & StringInitializable>(_ type: T.Type = T.self, forKey key: Key) throws -> T? {
         guard contains(key) else { return nil }
         guard !(try decodeNil(forKey: key)) else { return nil }
         
