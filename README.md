@@ -74,51 +74,51 @@ Shifts may be identfy by `startTime`.
 Example output: 
 ```JSON
 {
-    "totalEarnings": 22952.400000000001,
-    "totalWorkHours": 25.75,
-    "eveningWorkHours": 5.25,
-    "overtimeWorkHours": 0,
-    "shifts": [
-        {
-            "workOvertimeRate": 0,
-            "workAtEveningRate": 0,
-            "workOvertimeMinutes": 0,
-            "workAtEveningMinutes": 315,
-            "workRate": 0,
-            "total": 7774.1999999999998,
-            "workMinutes": 315,
-            "startTime": "2019-06-27T12:00:00"
-        },
-        {
-            "workOvertimeRate": 0,
-            "workAtEveningRate": 0,
-            "workOvertimeMinutes": 0,
-            "workAtEveningMinutes": 0,
-            "workRate": 0,
-            "total": 3146.6999999999998,
-            "workMinutes": 255,
-            "startTime": "2019-06-28T12:00:00"
-        },
-        {
-            "workOvertimeRate": 0,
-            "workAtEveningRate": 0,
-            "workOvertimeMinutes": 0,
-            "workAtEveningMinutes": 0,
-            "workRate": 0,
-            "total": 5553,
-            "workMinutes": 450,
-            "startTime": "2019-06-29T11:00:00"
-        },
-        {
-            "workOvertimeRate": 0,
-            "workAtEveningRate": 0,
-            "workOvertimeMinutes": 0,
-            "workAtEveningMinutes": 0,
-            "workRate": 0,
-            "total": 6478.5,
-            "workMinutes": 525,
-            "startTime": "2019-06-30T12:00:00"
-        }
-    ]
+"totalEarnings": 382.53999999999996,
+"totalWorkHours": 25.75,
+"eveningWorkHours": 5.25,
+"overtimeWorkHours": 0,
+"shifts": [
+    {
+        "workOvertimeRate": 0,
+        "workAtEveningRate": 0,
+        "workOvertimeMinutes": 0,
+        "workAtEveningMinutes": 315,
+        "workRate": 0,
+        "total": 129.56999999999999,
+        "workMinutes": 315,
+        "startTime": "2019-06-27T12:00:00"
+    },
+    {
+        "workOvertimeRate": 0,
+        "workAtEveningRate": 0,
+        "workOvertimeMinutes": 0,
+        "workAtEveningMinutes": 0,
+        "workRate": 0,
+        "total": 52.445,
+        "workMinutes": 255,
+        "startTime": "2019-06-28T12:00:00"
+    },
+    {
+        "workOvertimeRate": 0,
+        "workAtEveningRate": 0,
+        "workOvertimeMinutes": 0,
+        "workAtEveningMinutes": 0,
+        "workRate": 0,
+        "total": 92.549999999999997,
+        "workMinutes": 450,
+        "startTime": "2019-06-29T11:00:00"
+    },
+    {
+        "workOvertimeRate": 0,
+        "workAtEveningRate": 0,
+        "workOvertimeMinutes": 0,
+        "workAtEveningMinutes": 0,
+        "workRate": 0,
+        "total": 107.97499999999999,
+        "workMinutes": 525,
+        "startTime": "2019-06-30T12:00:00"
+    }
+]
 }
 ```

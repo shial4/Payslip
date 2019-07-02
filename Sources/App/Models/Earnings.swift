@@ -143,9 +143,9 @@ final class Earnings: Content {
     var cribAllowance: Bool =  false
     var rate: Double = 0
     var total: Double {
-        let normalWork = Double(normalWorkMinutes) * (rate * workRate + rate)
-        let eveningWork = Double(workAtEveningMinutes) * (rate * workAtEveningRate + rate)
-        let overTimeWork = Double(workOvertimeMinutes) * (rate * workOvertimeRate + rate)
+        let normalWork = (Double(normalWorkMinutes) / 60.0) * (rate * workRate + rate)
+        let eveningWork = (Double(workAtEveningMinutes) / 60.0) * (rate * workAtEveningRate + rate)
+        let overTimeWork = (Double(workOvertimeMinutes) / 60.0) * (rate * workOvertimeRate + rate)
         return normalWork + eveningWork + overTimeWork
     }
     
